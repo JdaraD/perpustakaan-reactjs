@@ -1,0 +1,32 @@
+import { createBrowserRouter } from "react-router-dom";
+import UserLayouts from "../layouts/user/userLayouts";
+import AdminLayouts from "../layouts/admin/adminLayouts";
+
+import Home from "../pages/user/Home";
+import AdminDashboard from "../pages/admin/AdminDashboard";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <UserLayouts />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+    ],
+  },
+  {
+    path: "/admin",
+    element: <AdminLayouts />,
+    // element : <ProtectedRoute />,
+    children: [
+      {
+        index: true,
+        element: <AdminDashboard />,
+      },
+    ],
+  },
+]);
+
+export default router;
