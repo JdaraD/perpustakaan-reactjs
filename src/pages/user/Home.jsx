@@ -59,11 +59,9 @@ function NewRelease() {
 const Home = () => {
   return (
     <div className="container mx-auto px-4 py-6 flex flex-col gap-8">
-      {/* HERO SECTION */}
       <section className="w-full">
         <div className="flex flex-col lg:flex-row overflow-hidden rounded-xl shadow-lg">
-          {/* Content */}
-          <div className=" w-full lg:w-[45%] bg-amber-600 p-6 lg:p-8 flex flex-col justify-center gap-4">
+          <div className=" w-full lg:w-[45%] bg-amber-600 p-6 lg:p-8 flex flex-col justify-center gap-4 order-2 lg:order-1">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">
               Welcome to BookVerse, your ultimate destination for all things
               books!
@@ -79,11 +77,10 @@ const Home = () => {
             </p>
           </div>
 
-          {/* Image */}
           <img
             src={image}
             alt="Background"
-            className=" w-full lg:w-[55%]h-62.5 md:h-87.5 lg:h-auto object-cover"
+            className="w-full lg:w-[55%] h-62.5 md:h-87.5 lg:h-auto object-cover order-1 lg:order-2"
           />
         </div>
       </section>
@@ -91,7 +88,7 @@ const Home = () => {
       <section className="w-full flex flex-col gap-4">
         <h2 className="text-xl md:text-2xl font-bold">Most Viewed</h2>
 
-        <div className="bg-gray-200 rounded-xl shadow-lg p-4 overflow-x-auto custom-scrollbar ">
+        <div className="bg-white rounded-xl shadow-md p-4 overflow-x-auto custom-scrollbar">
           <div className="flex gap-4 min-w-max">{kotakPerulangan()}</div>
         </div>
       </section>
@@ -99,7 +96,7 @@ const Home = () => {
       <section className="w-full flex flex-col gap-4">
         <h2 className="text-xl md:text-2xl font-bold">New Release</h2>
 
-        <div className="bg-gray-200 rounded-xl shadow-lg p-4">
+        <div className="bg-white rounded-xl shadow-lg p-4">
           <div className="h-20 bg-amber-600 rounded-lg mb-4"></div>
 
           <div className="flex flex-col xl:flex-row gap-4">
@@ -111,7 +108,7 @@ const Home = () => {
 
             {/* Sidebar */}
             <aside className="w-full xl:w-72 shrink-0">
-              <div className="xl:sticky xl:top-20 h-75 xl:h-100 bg-purple-300 rounded-lg" />
+              <div className="xl:sticky xl:top-20 h-75 xl:h-100 bg-purple-300 shadow-lg rounded-lg" />
             </aside>
           </div>
         </div>
