@@ -3,6 +3,8 @@ import UserLayouts from "../layouts/user/userLayouts";
 import AdminLayouts from "../layouts/admin/adminLayouts";
 
 import Home from "../pages/user/Home";
+import BookDetails from "../pages/user/BookDetails";
+
 import AdminDashboard from "../pages/admin/AdminDashboard";
 
 const router = createBrowserRouter([
@@ -13,6 +15,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "book-details",
+        element: <BookDetails />,
       },
     ],
   },

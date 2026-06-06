@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import image from "../../../public/img/background.jpg";
 
@@ -46,9 +47,14 @@ function NewRelease() {
             <p className="text-xs font-normal">Charles</p>
           </div>
 
-          <button className="bg-amber-500 text-xs font-bold text-white py-1 px-4 rounded-md hover:bg-amber-600 cursor-pointer">
-            View Details
-          </button>
+          <Link to="/book-details">
+            <button
+              type="button"
+              className="bg-amber-500 text-xs font-bold text-white py-1 px-4 rounded-md hover:bg-amber-600 cursor-pointer"
+            >
+              View Details
+            </button>
+          </Link>
         </div>
       </div>,
     );
@@ -58,7 +64,7 @@ function NewRelease() {
 
 const Home = () => {
   return (
-    <div className="container mx-auto px-4 py-6 flex flex-col gap-8">
+    <div className="container w-[90%] mx-auto px-4 py-6 flex flex-col gap-8">
       <section className="w-full">
         <div className="flex flex-col lg:flex-row overflow-hidden rounded-xl shadow-lg">
           <div className=" w-full lg:w-[45%] bg-amber-600 p-6 lg:p-8 flex flex-col justify-center gap-4 order-2 lg:order-1">
