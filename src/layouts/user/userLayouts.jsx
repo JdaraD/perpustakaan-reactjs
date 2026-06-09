@@ -4,10 +4,12 @@ import Footer from "../../components/user/Footer";
 
 export default function UserLayouts() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen font-[Poppins]">
       <Navbar />
-      <Outlet />
+      <main className="flex-1">
+        <Outlet />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
