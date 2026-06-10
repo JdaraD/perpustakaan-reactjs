@@ -4,6 +4,7 @@ import AdminLayouts from "../layouts/admin/adminLayouts";
 
 import Home from "../pages/user/Home";
 import BookDetails from "../pages/user/BookDetails";
+import ReadBook from "../pages/user/ReadBook";
 
 import AdminDashboard from "../pages/admin/AdminDashboard";
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "book-details",
         element: <BookDetails />,
+      },
+      {
+        path: "read-book",
+        element: <ReadBook />,
       },
     ],
   },
