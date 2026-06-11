@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ReadBook = () => {
   return (
-    <div className="flex justify-around items-center w-full h-full rounded-md my-4">
+    <div className="flex justify-center items-center w-full h-full rounded-md my-4">
       <div className="bg-gray-300/30 flex relative flex-col lg:flex-row w-[80%] h-auto rounded-md shadow-lg p-4 lg:gap-2 md:gap-2 gap-4 mb-2">
         <div className="flex flex-col animate-pulse bg-gray-300 min-h-screen lg:w-[64%] w-full rounded-md shadow-lg p-4 justify-between"></div>
         <div className="h-auto lg:w-[36%] w-full">
@@ -71,10 +71,10 @@ const ReadBook = () => {
             </button>
           </form>
         </div>
-        <Link to="/book-details" className="absolute right-2 bottom-2">
+        <Link to="/book-details" className="absolute right-4 bottom-4">
           <button
             type="button"
-            className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 cursor-pointer"
+            className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 cursor-pointer shadow-md"
           >
             back
           </button>
