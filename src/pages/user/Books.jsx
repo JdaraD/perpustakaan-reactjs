@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
@@ -52,7 +51,7 @@ const Books = () => {
 
   return (
     <div className="flex justify-center items-center">
-      <div className="flex flex-col bg-gray-200 w-[80%] h-auto rounded-md shadow-lg m-4 p-4 gap-4">
+      <div className="flex flex-col bg-white w-[80%] h-auto rounded-md shadow-lg m-4 p-4 gap-4">
         <div className="flex flex-col items-center justify-center h-auto w-full rounded-md gap-4">
           <h1 className="font-bold text-3xl">Word BookPedia</h1>
           <div className="border-b border-gray-500/20 w-full"></div>

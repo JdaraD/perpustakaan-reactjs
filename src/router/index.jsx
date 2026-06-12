@@ -6,6 +6,7 @@ import Home from "../pages/user/Home";
 import BookDetails from "../pages/user/BookDetails";
 import ReadBook from "../pages/user/ReadBook";
 import Books from "../pages/user/Books";
+import About from "../pages/user/About";
 
 import AdminDashboard from "../pages/admin/AdminDashboard";
 
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "books",
         element: <Books />,
+      },
+      {
+        path: "About",
+        element: <About />,
       },
     ],
   },
